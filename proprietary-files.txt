@@ -1125,7 +1125,6 @@ vendor/bin/init.qti.kernel.debug.sh
 vendor/bin/init.qti.kernel.early_debug-blair.sh
 vendor/bin/init.qti.kernel.early_debug-holi.sh
 vendor/bin/init.qti.kernel.early_debug.sh
-vendor/etc/init/hw/init.qcom.factory.rc
 vendor/etc/init/hw/init.qti.ufs.rc
 
 # IPA Firmware
