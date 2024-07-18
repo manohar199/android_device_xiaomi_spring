@@ -168,6 +168,9 @@ on boot
     chmod 0664 /sys/class/thermal/thermal_message/boost
     chown system system /sys/class/thermal/thermal_message/balance_mode
 
+    # Set thermal mode to mgame
+    write /sys/devices/virtual/thermal/thermal_message/sconfig 19
+
 #qvga
     chown cameraserver cameraserver /sys/class/qvga/qvga/rear_qvga
     chmod 0666 /sys/class/qvga/qvga/rear_qvga
