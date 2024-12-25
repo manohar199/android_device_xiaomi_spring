@@ -249,6 +249,9 @@ PRODUCT_PACKAGES += \
     TelephonyOverlaySpring \
     WifiOverlaySpring
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
