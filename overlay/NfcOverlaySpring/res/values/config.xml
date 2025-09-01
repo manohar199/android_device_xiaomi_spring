@@ -8,6 +8,13 @@
 
     <bool name="enable_reader_option_support">true</bool>
 
+    <!-- List of SKUs where Secure NFC functionality is supported -->
+    <string-array name="config_skuSupportsSecureNfc" translatable="false">
+    <item>o19cn</item>
+    <item>o19cn_ss</item>
+    <item>o19jp</item>
+  </string-array>
+
     <!-- Enable EUICC support for offhost card emulation -->
     <bool name="enable_euicc_support">true</bool>
 </resources>
