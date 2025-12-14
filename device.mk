@@ -243,6 +243,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySpring \
     FrameworkResOverlaySpring \
+    Launcher3OverlaySpring \
     NfcOverlaySpring \
     SettingsOverlaySpring \
     SystemUIOverlaySpring \
