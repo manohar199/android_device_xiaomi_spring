@@ -244,6 +244,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlaySpring \
     FrameworkResOverlaySpring \
     Launcher3OverlaySpring \
+    LineageSettingsProviderOverlaySpring \
     NfcOverlaySpring \
     SettingsOverlaySpring \
     SystemUIOverlaySpring \
