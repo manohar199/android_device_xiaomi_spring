@@ -1093,13 +1093,6 @@ vendor/firmware/gen6_3_25_0_zap.b01
 vendor/firmware/gen6_3_25_0_zap.b02
 vendor/firmware/gen6_3_25_0_zap.elf
 vendor/firmware/gen6_3_25_0_zap.mdt
-vendor/firmware/gen70900_aqe.fw
-vendor/firmware/gen70900_sqe.fw
-vendor/firmware/gen70900_zap.mbn
-vendor/firmware/gen71100_gmu.bin
-vendor/firmware/gen71100_sqe.fw
-vendor/firmware/gen71100_zap.mbn
-vendor/firmware/gmu_gen70900.bin
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
