@@ -1116,16 +1116,8 @@ vendor/bin/init.kernel.post_boot-blair.sh
 vendor/bin/init.kernel.post_boot-holi.sh
 vendor/bin/init.kernel.post_boot.sh
 vendor/bin/init.qcom.early_boot.sh
-vendor/bin/init.qcom.efs.sync.sh
 vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qcom.sh
-vendor/bin/init.qti.kernel.debug-blair.sh
-vendor/bin/init.qti.kernel.debug-holi.sh
-vendor/bin/init.qti.kernel.debug.sh
-vendor/bin/init.qti.kernel.early_debug-blair.sh
-vendor/bin/init.qti.kernel.early_debug-holi.sh
-vendor/bin/init.qti.kernel.early_debug.sh
-vendor/etc/init/hw/init.qti.ufs.rc
 
 # IPA Firmware
 vendor/etc/init/ipa_fws.rc
