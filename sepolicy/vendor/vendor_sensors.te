@@ -1,0 +1,2 @@
+allow vendor_sensors proc_tp_virtual_proximity:file { getattr open read write };
+allow vendor_sensors vendor_sysfs_battery_supply:dir search;
