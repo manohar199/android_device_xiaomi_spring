@@ -12,7 +12,6 @@ ro.media.xml_variant.profiles=_blair
 # Radio
 persist.vendor.radio.atfwd.start=true
 ril.subscription.types=NV,RUIM
-ro.radio.device_type=1
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 

@@ -1,4 +1,4 @@
-# Unpinned blobs from spring-user 15 AQ3A.250226.002 OS2.0.210.0.VOUMIXM release-keys
+# Unpinned blobs from spring-user 16 BP2A.250605.031.A3 16OS3.1.260523.185709363.QCPEGL.S release-keys
 
 # ACDB
 vendor/etc/acdbdata/blair_qrd/QRD_acdb_cal.acdb
@@ -264,6 +264,7 @@ vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 
 # Camera configs
 odm/etc/camera/cameraopt.json
+odm/etc/camera/cameraopt_reclaim.json
 vendor/etc/camera/model/preview/back/preview_model
 vendor/etc/camera/model/preview/front/model_m/sg_pre_model
 vendor/etc/camera/model/snapshot/back/capture_cache
@@ -710,7 +711,7 @@ vendor/lib64/libhdr_stub.so
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V1-ndk.so
+system_ext/lib64/vendor.xiaomi.hardware.display.mihwcextension-V2-ndk.so
 vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_DEPS
 vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
@@ -1482,6 +1483,10 @@ vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
 
+# QSPA
+system_ext/etc/init/qspa_system.rc
+system_ext/etc/qspa/qspa_default.rc
+
 # QSPM
 vendor/bin/vendor.qti.qspmhal-service
 vendor/etc/init/vendor.qti.qspmhal-service.rc
@@ -1532,6 +1537,7 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat
@@ -1576,15 +1582,14 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml
 vendor/etc/qcril_database/upgrade/config/13.0_config.sql
 vendor/etc/qcril_database/upgrade/config/14.0_config.sql
-vendor/etc/qcril_database/upgrade/config/15.0_config.sql
-vendor/etc/qcril_database/upgrade/config/16.0_config.sql
+vendor/etc/qcril_database/upgrade/config/17.0_config.sql
 vendor/etc/qcril_database/upgrade/config/6.0_config.sql
 vendor/etc/qcril_database/upgrade/config/7.0_config.sql
 vendor/etc/qcril_database/upgrade/config/8.0_config.sql
 vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/14_version_update_ecc_table_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/15_version_update_ecc_table_qcrilnr.sql
-vendor/etc/qcril_database/upgrade/other/16_version_update_ecc_table_qcrilnr.sql
+vendor/etc/qcril_database/upgrade/other/15_version_update_modules.sql
+vendor/etc/qcril_database/upgrade/other/17_version_update_ecc_table_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql
 vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql
@@ -1949,24 +1954,6 @@ odm/etc/thermal-jp-cclassvideo.conf
 odm/etc/thermal-jp-cgame.conf
 odm/etc/thermal-jp-chg-only.conf
 odm/etc/thermal-jp-class0.conf
-odm/etc/thermal-jp-demo-camera.conf
-odm/etc/thermal-jp-demo-cclassvideo.conf
-odm/etc/thermal-jp-demo-cgame.conf
-odm/etc/thermal-jp-demo-chg-only.conf
-odm/etc/thermal-jp-demo-class0.conf
-odm/etc/thermal-jp-demo-demo.conf
-odm/etc/thermal-jp-demo-hp-mgame.conf
-odm/etc/thermal-jp-demo-hp-normal.conf
-odm/etc/thermal-jp-demo-huanji.conf
-odm/etc/thermal-jp-demo-livestream.conf
-odm/etc/thermal-jp-demo-mgame.conf
-odm/etc/thermal-jp-demo-navigation.conf
-odm/etc/thermal-jp-demo-nolimits.conf
-odm/etc/thermal-jp-demo-normal.conf
-odm/etc/thermal-jp-demo-phone.conf
-odm/etc/thermal-jp-demo-tgame.conf
-odm/etc/thermal-jp-demo-video.conf
-odm/etc/thermal-jp-demo-videochat.conf
 odm/etc/thermal-jp-demo.conf
 odm/etc/thermal-jp-hp-mgame.conf
 odm/etc/thermal-jp-hp-normal.conf
