@@ -1,4 +1,4 @@
-# Unpinned firmware from spring-user 16 BP2A.250605.031.A3 16OS3.1.260523.185709363.QCPEGL.S release-keys
+# Unpinned firmware from spring-user 16 BP2A.250605.031.A3 16OS3.1.260731.200512599.QCPEGL.S release-keys
 
 abl.img;AB
 bluetooth.img;AB
