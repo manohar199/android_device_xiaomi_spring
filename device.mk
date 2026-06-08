@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlaySpring \
     FrameworkResOverlaySpring \
+    NfcOverlaySpring \
     SettingsOverlaySpring \
     SystemUIOverlaySpring \
     TelephonyOverlaySpring \
