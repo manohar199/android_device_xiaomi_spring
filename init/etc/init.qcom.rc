@@ -62,12 +62,6 @@
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
 
-on early-init && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-    write /proc/sys/vm/watermark_scale_factor 200
-    write /proc/sys/vm/min_free_kbytes 98304
-
 on early-init
     mount tracefs tracefs /sys/kernel/tracing
     chmod 0755 /sys/kernel/tracing
@@ -101,10 +95,6 @@ on early-init && property:ro.debuggable=1
     setprop persist.dbg.keep_debugfs_mounted true
 #add debugfs on userroot for O19 end
 
-on init && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
 on init
 
     # Support legacy paths
@@ -118,35 +108,7 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
-on late-init && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on early-fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on post-fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
 on post-fs
-
-on late-fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on post-fs-data && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on early-boot && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64KB
@@ -166,10 +128,6 @@ on early-boot
     chmod 0664 /mnt/vendor/persist/data/pfm/licenses/store_3
     chown system system /mnt/vendor/persist/data/pfm/licenses/store_4
     chmod 0664 /mnt/vendor/persist/data/pfm/licenses/store_4
-
-on boot && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
@@ -321,18 +279,6 @@ on boot
     chmod 777 /sys/bus/coresight/devices/coresight-stm/enable_source
     chown -h vendor_qdss /sys/bus/coresight/devices/coresight-modem-diag/enable_source
     chmod 777 /sys/bus/coresight/devices/coresight-modem-diag/enable_source
-
-on zygote-start && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on nonencrypted && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on property:sys.boot_completed=1 && property:ro.boot.ota_reboot=1
-    write /proc/sys/vm/watermark_scale_factor 10
-    write /proc/sys/vm/min_free_kbytes 8192
 
 # msm specific files that need to be created on /data
 on post-fs-data

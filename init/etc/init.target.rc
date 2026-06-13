@@ -71,17 +71,9 @@ on early-init && property:ro.boot.hwc=CN
 on early-init && property:ro.boot.hwc=India
     setprop ro.power.profile bat_6310
 
-on early-init && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
 on early-init
     write /proc/sys/kernel/printk_devkmsg ratelimited
     export MEMTAG_OPTIONS off
-
-on init && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on init
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
@@ -90,20 +82,8 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
-on late-init && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on early-fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
 on early-fs
     start vold
-
-on fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on fs
     start hwservicemanager
@@ -119,26 +99,14 @@ on fs
     # ADD: Audio_Xlog
     chmod 0666 /dev/xlog
 
-on post-fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
-
-on late-fs && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
     #exec_start wait_for_keymaster
     mount_all --late
-
-on post-fs-data && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
@@ -176,16 +144,8 @@ on post-fs-data
     #lct.caosong modify for BUGO19-4198:QCC mode configuration
     setprop vendor.qti.qcc.oper.mode 4
 
-on early-boot && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
 on early-boot
     verity_update_state
-
-on boot && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on boot
     write /dev/cpuset/audio-app/cpus 6-7
@@ -230,14 +190,6 @@ on post-fs-data
     mkdir /data/vendor/goodix 0777 system system
     mkdir /data/vendor/fpc 0777 system system
     chmod 0666 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
-
-on zygote-start && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
-
-on nonencrypted && property:ro.boot.ota_reboot=1
-    #reclaim slab and buffer cache
-    write /proc/sys/vm/drop_cache 3
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
