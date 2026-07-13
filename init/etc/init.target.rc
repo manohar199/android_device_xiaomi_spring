@@ -111,8 +111,6 @@ on late-fs
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/mac_addr 0777 root system
-    # Disable audio.deep
-    setprop media.stagefright.audio.deep false
     mkdir /data/vendor/wlan_logs 0777 root shell
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1

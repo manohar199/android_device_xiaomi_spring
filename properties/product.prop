@@ -29,7 +29,7 @@ bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.vcp.controller.enabled=false
 
 # Media
-media.stagefright.audio.deep=true
+media.stagefright.audio.deep=false
 
 # Radio
 persist.vendor.radio.enable_temp_dds=true
