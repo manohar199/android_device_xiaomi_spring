@@ -59,6 +59,9 @@
 /(odm|vendor|vendor/odm|system/vendor/odm)/bin/hw/android\.hardware\.gnss.*-service-qti u:object_r:vendor_hal_gnss_qti_exec:s0
 /data/vendor/ins(/.*)? u:object_r:vendor_ins_vendor_data_file:s0
 
+# IR
+/dev/spidev1.1 u:object_r:lirc_device:s0
+
 # Mlipay
 /(odm|vendor/odm|system/vendor)/bin/mlipayd u:object_r:hal_mlipay_default_exec:s0
 
