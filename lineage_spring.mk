@@ -23,8 +23,8 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="spring_global-user 16 BP2A.250605.031.A3 16OS3.1.260523.185709363.QCPEGL.S release-keys" \
     BuildFingerprint=Xiaomi/spring_global/spring:16/BP2A.250605.031.A3/16OS3.1.260523.185709363.QCPEGL.S:user/release-keys \
-    DeviceName=spring_global \
-    DeviceProduct=spring
+    DeviceName=spring \
+    DeviceProduct=spring_global
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
