@@ -1,1 +1,4 @@
 binder_call(system_server, vendor_hal_displayfeature_xiaomi_default)
+
+# IR
+allow system_server lirc_device:chr_file rw_file_perms;

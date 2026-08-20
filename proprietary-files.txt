@@ -1,4 +1,4 @@
-# Unpinned blobs from spring-user 16 BP2A.250605.031.A3 16OS3.1.260523.185709363.QCPEGL.S release-keys
+# Unpinned blobs from spring-user 16 BP2A.250605.031.A3 16OS3.1.260731.200512599.QCPEGL.S release-keys
 
 # ACDB
 vendor/etc/acdbdata/blair_qrd/QRD_acdb_cal.acdb
@@ -15,7 +15,6 @@ vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libvmmem.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
@@ -1339,11 +1338,6 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
-
-# QCOM system daemon
-vendor/bin/qcom-system-daemon
-vendor/etc/seccomp_policy/qti-systemd.policy
-vendor/lib64/libsubsystem_control.so
 
 # QCV
 vendor/bin/init.qti.qcv.sh
