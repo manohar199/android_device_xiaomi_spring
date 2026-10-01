@@ -28,3 +28,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+# Device type
+# Select from phone, tablet, or foldable.
+UWU_DEVICE_TYPE := phone
+
+# Whether the device supports telephony
+# Select from true or false.
+UWU_SUPPORTS_TELEPHONY := true
+
+# OPTIONAL: Device maintainer
+UWU_MAINTAINER := Macho_Man
+
+PRODUCT_SOONG_ONLY := true
