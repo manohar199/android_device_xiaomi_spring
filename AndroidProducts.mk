@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/uwu_spring.mk
+    $(LOCAL_DIR)/edith_spring.mk
