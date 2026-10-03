@@ -8,14 +8,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/uwu/config/common.mk)
+$(call inherit-product, vendor/edith/config/common.mk)
 
 # Inherit from spring device
 $(call inherit-product, device/xiaomi/spring/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := spring
-PRODUCT_NAME := uwu_spring
+PRODUCT_NAME := edith_spring
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 25057RN09G
 PRODUCT_MANUFACTURER := Xiaomi
@@ -28,15 +28,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-# Device type
-# Select from phone, tablet, or foldable.
-UWU_DEVICE_TYPE := phone
 
-# Whether the device supports telephony
-# Select from true or false.
-UWU_SUPPORTS_TELEPHONY := true
-
-# OPTIONAL: Device maintainer
-UWU_MAINTAINER := Macho_Man
-
-PRODUCT_SOONG_ONLY := true
