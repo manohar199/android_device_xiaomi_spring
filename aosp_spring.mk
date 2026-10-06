@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/spring/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := spring
-PRODUCT_NAME := lineage_spring
+PRODUCT_NAME := aosp_spring
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 25057RN09G
 PRODUCT_MANUFACTURER := Xiaomi
