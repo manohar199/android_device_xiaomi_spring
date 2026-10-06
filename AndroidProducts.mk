@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_spring.mk
+    $(LOCAL_DIR)/voltage_spring.mk
